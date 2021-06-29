@@ -5,6 +5,8 @@ $colors: (
     black-90-opacity: #0000004f,
 );
 
+$boxShadow: 0 5px 10px rgba(0, 0, 0, 0.315);
+
 @function color($color-name) {
     @return map-get($colors, $color-name);
 }
