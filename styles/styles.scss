@@ -27,37 +27,17 @@ body {
     background-size: contain;
 }
 
+.slide-controls--container {
+    display: none;
+}
+
 .website--grid {
     min-height: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: 100px auto;
 
     @include mobileSize {
-        grid-template-rows: auto auto;
-    }
-}
-
-.main-content {
-    h1 {
-        font-size: 7.2rem;
-        span {
-            color: color(accent-light-green);
-        }
-    }
-    .slide {
-        .slide-img {
-            width: 100%;
-        }
-
-        .text-box {
-            &__h2 {
-                font-size: 3.2rem;
-            }
-
-            &__p {
-                font-size: 1.8rem;
-            }
-        }
+        grid-template-rows: 75px auto;
     }
 }

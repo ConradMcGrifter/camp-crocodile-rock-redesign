@@ -3,6 +3,10 @@ header {
     display: flex;
     justify-content: center;
     background: color(secondary-light-blue);
+
+    @include mobileSize {
+        padding: 0;
+    }
     nav {
         display: flex;
         justify-content: space-between;
@@ -59,6 +63,7 @@ header {
                 }
 
                 li {
+                    text-align: center;
                     margin-left: 1em;
 
                     @include mobileSize {
