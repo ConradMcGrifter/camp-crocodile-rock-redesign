@@ -34,31 +34,47 @@
                 <!-- main title -->
                 <div class="main-content--wrap">
                     <h1 class="title">camp <span>crocodile rock</span></h1>
-                    <!-- slide 1 -->
+                    
                     <article class="slide--grid">
                         <!-- info box overlay -->
                         <div class="info-box--wrap">
-                            <div class="info-box">
+                            <!-- slide 1 info-->
+                            <div class="info-box slide-1-info">
                                 <h2 class="info-box__h2">
                                     Welcome to camp crocodile rock
                                 </h2>
                                 <p class="info-box__p">Center Sandwich, NH</p>
                             </div>
+
+                            <!-- slide 2 info-->
+                            <div class="info-box slide-2-info">
+                                <h2 class="info-box__h2">
+                                    Lorem ipsum dolor sit amet.
+                                </h2>
+                                <p class="info-box__p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In veniam corrupti ut veritatis illum sequi quam adipisci dolores eius vitae.</p>
+                            </div>
                         </div>
+
+                        <!-- slide 1 img -->
+                        <img class="slide__img slide-2-img" src="images/slide-show/house-front.jpg" alt="">
+                        
+                        <!-- slide 2 img -->
                         <img
                             src="images/slide-show/fishing-sunset.jpeg"
                             alt=""
-                            class="slide__img"
+                            class="slide__img slide-1-img"
                         />
+
+                        
                     </article>
 
                     <!-- prev and next arrows -->
                     <div class="slide-controls--container">
                         <div class="arrows--wrap">
-                            <a href="#" class="prev"
+                            <a href="#" id="prev"
                                 ><img src="images/icon-prev.svg" alt=""
                             /></a>
-                            <a href="#" class="next"
+                            <a href="#" id="next"
                                 ><img src="images/icon-next.svg" alt=""
                             /></a>
                         </div>
@@ -74,5 +90,7 @@
                 <!--main content wrap ends-->
             </section>
         </div>
+
+    <script src="js/script.js"></script>
     </body>
 </html>

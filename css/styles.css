@@ -228,6 +228,10 @@ header nav .ul--wrap ul li .nav__link {
      object-fit: cover;
 }
 
+.main-content .main-content--wrap .slide--grid .slide-2-img {
+  position: bottom;
+}
+
 .main-content .main-content--wrap .slide-controls--container {
   position: absolute;
   bottom: -2.85rem;
