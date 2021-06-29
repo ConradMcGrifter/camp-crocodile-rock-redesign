@@ -1,4 +1,4 @@
-@import "utils", "header";
+@import "utils", "header", "hero-section";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
 html {
@@ -13,6 +13,7 @@ html {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
+    // outline: solid red 1px;
 }
 
 body {

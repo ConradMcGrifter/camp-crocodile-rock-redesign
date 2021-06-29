@@ -1,1 +1,1 @@
-re write the main body. the grid will have to be re done. maybe try just using flexbox?
+1. re write the main body. the grid will have to be re done. maybe try just using flexbox? - using a flex container for the main wrap that holds the header and the slide - use grid for the slide image + overlay box?

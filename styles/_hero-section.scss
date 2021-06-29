@@ -1,0 +1,59 @@
+.main-content {
+    @include flexCenter();
+    align-items: flex-start;
+
+    .main-content--wrap {
+        margin-top: 2em;
+        width: 75%;
+        max-width: 900px;
+        min-width: 700px;
+        // outline: solid red 2px;
+
+        .title {
+            font-size: clamp(5rem, 6vw, 7rem);
+            color: white;
+
+            span {
+                color: color(accent-light-green);
+            }
+        }
+
+        .slide--grid {
+            margin-top: 2em;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 300px 2fr;
+            grid-template-rows: max(500px);
+
+            .info-box--wrap {
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+                background: rgba(5, 5, 5, 0.85);
+                z-index: 999;
+                padding: 1em;
+                @include flexCenter();
+            }
+            .info-box {
+                color: white;
+
+                &__h2 {
+                    font-size: 2.6rem;
+                    font-weight: 400;
+                    margin-bottom: 2em;
+                }
+
+                &__p {
+                    font-size: 1.8rem;
+                }
+            }
+
+            .slide__img {
+                grid-column: 1 / 3;
+                grid-row: 1 / 2;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
