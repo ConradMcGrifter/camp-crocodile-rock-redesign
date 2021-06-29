@@ -1,0 +1,16 @@
+$colors: (
+    primary-deep-blue: #1e87d4,
+    secondary-light-blue: #6cbcff,
+    accent-light-green: #97ef88,
+    black-90-opacity: #000000c4,
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
+
+@mixin mobileSize {
+    @media only screen and (max-width: 850px) {
+        @content;
+    }
+}
