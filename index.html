@@ -7,5 +7,69 @@
         <link rel="stylesheet" href="css/styles.css" />
         <title>Document</title>
     </head>
-    <body></body>
+    <body>
+        <div class="website--grid">
+            <header>
+                <nav>
+                    <img class="logo" src="images/alligator-small.png" alt="" />
+                    <button id="hamburger-btn">
+                        <img
+                            class="hamburger-icon"
+                            src="images/icon-hamburger.svg"
+                            alt=""
+                        />
+                    </button>
+                    <div class="ul--wrap">
+                        <ul class="nav__ul">
+                            <li>
+                                <a href="#!" class="nav__link">image gallery</a>
+                            </li>
+                            <li><a href="#!" class="nav__link">about us</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <!-- main  / inner grid-->
+            <section class="main-content">
+                <!-- main title -->
+                <h1 class="title">camp <span>crocodile rock</span></h1>
+                <!-- slide 1 -->
+                <article class="slide">
+                    <!-- dark info box that partially overlays the image -->
+                    <div class="text-box">
+                        <h2 class="text-box__h2">
+                            Welcome to camp crocodile rock
+                        </h2>
+                        <p class="text-box__p">Center Sandwich, NH</p>
+                    </div>
+                    <!-- slider img -->
+                    <img
+                        src="images/slide-show/fishing-sunset.jpeg"
+                        alt=""
+                        class="slide-img"
+                    />
+                </article>
+
+                <!--  -->
+                <!-- prev and next arrows -->
+                <div class="slide-controls--container">
+                    <div class="arrows--wrap">
+                        <a href="#" class="prev"
+                            ><img src="images/icon-prev.svg" alt=""
+                        /></a>
+                        <a href="#" class="next"
+                            ><img src="images/icon-next.svg" alt=""
+                        /></a>
+                    </div>
+                    <!-- circles -->
+                    <div class="circles">
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
 </html>

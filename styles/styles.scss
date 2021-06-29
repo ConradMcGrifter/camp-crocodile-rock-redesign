@@ -1,9 +1,10 @@
-@import "utils";
+@import "utils", "header";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    height: 100%;
 }
 
 *,
@@ -16,5 +17,47 @@ html {
 
 body {
     font-family: "Poppins", sans-serif;
-    font-size: 3rem;
+    font-size: 2.4rem;
+    height: 100%;
+    background: linear-gradient(
+            rgba(30, 136, 212, 0.97),
+            rgba(30, 136, 212, 0.97)
+        ),
+        url("../images/bg-desktop.svg");
+    background-size: contain;
+}
+
+.website--grid {
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+
+    @include mobileSize {
+        grid-template-rows: auto auto;
+    }
+}
+
+.main-content {
+    h1 {
+        font-size: 7.2rem;
+        span {
+            color: color(accent-light-green);
+        }
+    }
+    .slide {
+        .slide-img {
+            width: 100%;
+        }
+
+        .text-box {
+            &__h2 {
+                font-size: 3.2rem;
+            }
+
+            &__p {
+                font-size: 1.8rem;
+            }
+        }
+    }
 }
