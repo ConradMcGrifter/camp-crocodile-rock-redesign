@@ -163,7 +163,7 @@ header nav .ul--wrap ul li .nav__link {
 }
 
 .main-content .main-content--wrap .slide--grid {
-  margin-top: 2em;
+  margin-top: 1em;
   width: 100%;
   display: -ms-grid;
   display: grid;

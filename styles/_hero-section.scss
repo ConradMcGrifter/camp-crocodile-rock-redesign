@@ -19,11 +19,11 @@
         }
 
         .slide--grid {
-            margin-top: 2em;
+            margin-top: 1em;
             width: 100%;
             display: grid;
             grid-template-columns: 300px 2fr;
-            grid-template-rows: max(500px);
+            grid-template-rows: 500px;
 
             .info-box--wrap {
                 grid-column: 1 / 2;
