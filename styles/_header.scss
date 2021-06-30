@@ -1,17 +1,17 @@
 header {
-    padding: 0.25em 0;
+    padding: 0.25em 1em;
     display: flex;
     justify-content: center;
     background: color(secondary-light-blue);
 
     @include mobileSize {
-        padding: 0;
+        padding: 0 1em;
     }
     nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 75%;
+        width: 85%;
         max-width: 950px;
 
         @include mobileSize {
@@ -35,7 +35,7 @@ header {
             background: none;
             border: none;
             display: none;
-            margin-right: 2em;
+            // margin-right: 2em;
             @include mobileSize {
                 display: block;
             }
