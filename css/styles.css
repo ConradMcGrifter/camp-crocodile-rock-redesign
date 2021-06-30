@@ -286,6 +286,18 @@ header nav .ul--wrap ul li .nav__link {
           align-items: center;
 }
 
+.main-content .main-content--wrap .slide-controls--container .arrows--wrap #prev,
+.main-content .main-content--wrap .slide-controls--container .arrows--wrap #next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-content .main-content--wrap .slide-controls--container .arrows--wrap #prev img,
+.main-content .main-content--wrap .slide-controls--container .arrows--wrap #next img {
+  width: 20px;
+}
+
 .main-content .main-content--wrap .slide-controls--container .arrows--wrap .circles {
   width: 50%;
   display: -webkit-box;
@@ -296,12 +308,18 @@ header nav .ul--wrap ul li .nav__link {
 }
 
 .main-content .main-content--wrap .slide-controls--container .arrows--wrap .circles .circle {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   border-radius: 999px;
   background: #616161;
   display: block;
   cursor: pointer;
+  -webkit-transition: background 0.25s;
+  transition: background 0.25s;
+}
+
+.main-content .main-content--wrap .slide-controls--container .arrows--wrap .circles .circle:hover {
+  background: #9b9b9b;
 }
 
 .main-content .main-content--wrap .slide-controls--container .arrows--wrap .circles .circle.active {

@@ -99,17 +99,33 @@
                 justify-content: space-between;
                 align-items: center;
 
+                #prev,
+                #next {
+                    // padding: 0.25em 0.5em;
+                    display: flex;
+
+                    img {
+                        width: 20px;
+                    }
+                }
+
                 .circles {
                     width: 50%;
                     display: flex;
                     justify-content: space-around;
+
                     .circle {
-                        width: 15px;
-                        height: 15px;
+                        width: 20px;
+                        height: 20px;
                         border-radius: 999px;
                         background: rgb(97, 97, 97);
                         display: block;
                         cursor: pointer;
+                        transition: background 0.25s;
+
+                        &:hover {
+                            background: rgb(155, 155, 155);
+                        }
                     }
 
                     .circle.active {
