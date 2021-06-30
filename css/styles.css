@@ -7,6 +7,9 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #004c90;
   position: relative;
   z-index: 1000;
@@ -51,7 +54,8 @@ header nav .logo {
 @media only screen and (max-width: 850px) {
   header nav .logo {
     visibility: hidden;
-    width: 65px;
+    width: 60px;
+    height: 60px;
   }
 }
 
@@ -65,7 +69,7 @@ header nav #hamburger-btn {
 @media only screen and (max-width: 850px) {
   header nav #hamburger-btn {
     display: block;
-    margin-right: 2em;
+    margin-right: 1.5em;
   }
 }
 
@@ -213,6 +217,7 @@ header nav .ul--wrap ul li .nav__link:hover::before {
 @media only screen and (max-width: 850px) {
   .main-content .main-content--wrap {
     min-width: 300px;
+    width: 90%;
   }
 }
 
@@ -248,8 +253,8 @@ header nav .ul--wrap ul li .nav__link:hover::before {
   .main-content .main-content--wrap .slide--grid {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 275px 200px;
-        grid-template-rows: 275px 200px;
+    -ms-grid-rows: 250px 200px;
+        grid-template-rows: 250px 200px;
   }
 }
 
@@ -568,8 +573,8 @@ body {
 
 @media only screen and (max-width: 850px) {
   .website--grid {
-    -ms-grid-rows: 75px auto;
-        grid-template-rows: 75px auto;
+    -ms-grid-rows: 60px auto;
+        grid-template-rows: 60px auto;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -16,6 +16,7 @@
 
         @include mobileSize {
             min-width: 300px;
+            width: 90%;
         }
 
         .title {
@@ -43,7 +44,7 @@
 
             @include mobileSize {
                 grid-template-columns: 1fr;
-                grid-template-rows: 275px 200px;
+                grid-template-rows: 250px 200px;
             }
 
             .info-box--wrap {

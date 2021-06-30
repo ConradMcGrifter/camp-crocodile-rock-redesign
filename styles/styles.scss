@@ -40,6 +40,6 @@ body {
     grid-template-rows: 90px auto;
 
     @include mobileSize {
-        grid-template-rows: 75px auto;
+        grid-template-rows: 60px auto;
     }
 }
