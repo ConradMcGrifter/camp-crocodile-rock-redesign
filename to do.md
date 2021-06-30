@@ -1,1 +1,1 @@
-add ::before elements to style the links
+make the main page mobile friendly

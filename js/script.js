@@ -1,3 +1,5 @@
+import * as navBar from "./navBar.js";
+
 const PREV = document.getElementById("prev");
 const NEXT = document.getElementById("next");
 const CIRCLES = document.getElementsByClassName("circle");
