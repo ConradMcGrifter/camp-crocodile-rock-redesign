@@ -27,7 +27,7 @@ header nav {
       -ms-flex-align: center;
           align-items: center;
   width: 75%;
-  max-width: 900px;
+  max-width: 1000px;
 }
 
 @media only screen and (max-width: 850px) {
@@ -39,7 +39,7 @@ header nav {
 }
 
 header nav .logo {
-  width: 100px;
+  width: 85px;
   opacity: 65%;
 }
 
@@ -148,8 +148,8 @@ header nav .ul--wrap ul li .nav__link {
 
 .main-content .main-content--wrap {
   margin-top: 2em;
-  width: 75%;
-  max-width: 900px;
+  width: 85%;
+  max-width: 1000px;
   min-width: 700px;
   position: relative;
 }
@@ -164,17 +164,19 @@ header nav .ul--wrap ul li .nav__link {
 }
 
 .main-content .main-content--wrap .slide--grid {
+  border-radius: 5px;
   background: #222222;
   margin-top: 1em;
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 300px 2fr;
-      grid-template-columns: 300px 2fr;
-  -ms-grid-rows: 500px;
-      grid-template-rows: 500px;
+  -ms-grid-columns: 300px 1fr;
+      grid-template-columns: 300px 1fr;
+  -ms-grid-rows: 575px;
+      grid-template-rows: 575px;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.315);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.315);
+  overflow: hidden;
 }
 
 .main-content .main-content--wrap .slide--grid .info-box--wrap {
@@ -184,10 +186,9 @@ header nav .ul--wrap ul li .nav__link {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
-  background: rgba(5, 5, 5, 0.85);
+  background: rgba(5, 5, 5, 0.9);
   z-index: 998;
   padding: 1em;
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -236,9 +237,7 @@ header nav .ul--wrap ul li .nav__link {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  display: none;
-  -webkit-animation: fade 0.5s;
-          animation: fade 0.5s;
+  visibility: hidden;
 }
 
 .main-content .main-content--wrap .slide--grid .slide-1-img {
@@ -298,11 +297,6 @@ header nav .ul--wrap ul li .nav__link {
   }
 }
 
-.active {
-  -webkit-animation: slideIn 0.5s;
-          animation: slideIn 0.5s;
-}
-
 @-webkit-keyframes fade {
   from {
     opacity: 0.4;
@@ -319,6 +313,33 @@ header nav .ul--wrap ul li .nav__link {
   to {
     opacity: 1;
   }
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.active {
+  -webkit-animation: fade 0.5s ease-in-out, zoom 1.25s ease-out;
+          animation: fade 0.5s ease-in-out, zoom 1.25s ease-out;
 }
 
 html {
@@ -356,8 +377,8 @@ body {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 100px auto;
-      grid-template-rows: 100px auto;
+  -ms-grid-rows: 85px auto;
+      grid-template-rows: 85px auto;
 }
 
 @media only screen and (max-width: 850px) {

@@ -4,8 +4,8 @@
 
     .main-content--wrap {
         margin-top: 2em;
-        width: 75%;
-        max-width: 900px;
+        width: 85%;
+        max-width: 1000px;
         min-width: 700px;
         position: relative;
 
@@ -21,22 +21,24 @@
         }
 
         .slide--grid {
+            border-radius: 5px;
             background: rgb(34, 34, 34);
             margin-top: 1em;
             width: 100%;
             display: grid;
-            grid-template-columns: 300px 2fr;
+            grid-template-columns: 300px 1fr;
             // grid-template-rows: minmax(450px, 0.7fr);
-            grid-template-rows: 500px;
+            grid-template-rows: 575px;
             box-shadow: $boxShadow;
+            overflow: hidden;
 
             .info-box--wrap {
                 grid-column: 1 / 2;
                 grid-row: 1 / 2;
-                background: rgba(5, 5, 5, 0.85);
+                background: rgba(5, 5, 5, 0.9);
                 z-index: 998;
                 padding: 1em;
-                overflow: hidden;
+
                 @include flexCenter();
 
                 .info-box {
@@ -67,8 +69,9 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                display: none;
-                animation: fade 0.5s;
+
+                visibility: hidden;
+                // animation: fade 0.5s ease-in-out, zoom 1.25s ease-out;
             }
 
             .slide-1-img {
@@ -108,10 +111,6 @@
     }
 }
 
-.active {
-    animation: slideIn 0.5s;
-}
-
 @keyframes fade {
     from {
         opacity: 0.4;
@@ -119,4 +118,18 @@
     to {
         opacity: 1;
     }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(1.15);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.active {
+    animation: fade 0.5s ease-in-out, zoom 1.25s ease-out;
 }

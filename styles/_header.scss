@@ -12,14 +12,14 @@ header {
         justify-content: space-between;
         align-items: center;
         width: 75%;
-        max-width: 900px;
+        max-width: 1000px;
 
         @include mobileSize {
             flex-wrap: wrap;
             width: 100%;
         }
         .logo {
-            width: 100px;
+            width: 85px;
             opacity: 65%;
 
             @include mobileSize {
