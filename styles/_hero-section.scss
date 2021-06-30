@@ -50,7 +50,7 @@
                     position: relative;
                     color: white;
                     display: none;
-                    animation: slideIn 0.5s;
+                    animation: slideIn 0.5s, fade2 1s;
                     height: 100%;
                     justify-content: center;
                     flex-direction: column;
@@ -103,6 +103,12 @@
                 #next {
                     // padding: 0.25em 0.5em;
                     display: flex;
+                    transition: background 0.25s;
+                    padding: 0.1em;
+
+                    &:hover {
+                        background: rgba(255, 255, 255, 0.096);
+                    }
 
                     img {
                         width: 20px;
@@ -124,7 +130,7 @@
                         transition: background 0.25s;
 
                         &:hover {
-                            background: rgb(155, 155, 155);
+                            background: rgb(177, 177, 177);
                         }
                     }
 
@@ -155,6 +161,14 @@
     }
 }
 
+@keyframes fade2 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 @keyframes zoom {
     from {
         transform: scale(1.15);
