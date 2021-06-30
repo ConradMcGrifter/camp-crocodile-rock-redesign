@@ -164,6 +164,7 @@ header nav .ul--wrap ul li .nav__link {
 }
 
 .main-content .main-content--wrap .slide--grid {
+  background: #222222;
   margin-top: 1em;
   width: 100%;
   display: -ms-grid;
@@ -186,6 +187,7 @@ header nav .ul--wrap ul li .nav__link {
   background: rgba(5, 5, 5, 0.85);
   z-index: 998;
   padding: 1em;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -201,18 +203,26 @@ header nav .ul--wrap ul li .nav__link {
           flex-direction: row;
 }
 
-.main-content .main-content--wrap .slide--grid .info-box {
+.main-content .main-content--wrap .slide--grid .info-box--wrap .info-box {
+  position: relative;
   color: white;
+  display: none;
+  -webkit-animation: slideIn 0.5s;
+          animation: slideIn 0.5s;
 }
 
-.main-content .main-content--wrap .slide--grid .info-box__h2 {
+.main-content .main-content--wrap .slide--grid .info-box--wrap .info-box__h2 {
   font-size: 2.6rem;
   font-weight: 400;
   margin-bottom: 2em;
 }
 
-.main-content .main-content--wrap .slide--grid .info-box__p {
+.main-content .main-content--wrap .slide--grid .info-box--wrap .info-box__p {
   font-size: 1.8rem;
+}
+
+.main-content .main-content--wrap .slide--grid .info-box--wrap .slide-1-info {
+  display: block;
 }
 
 .main-content .main-content--wrap .slide--grid .slide__img {
@@ -226,16 +236,19 @@ header nav .ul--wrap ul li .nav__link {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  display: none;
+  -webkit-animation: fade 0.5s;
+          animation: fade 0.5s;
 }
 
-.main-content .main-content--wrap .slide--grid .slide-2-img {
-  position: bottom;
+.main-content .main-content--wrap .slide--grid .slide-1-img {
+  display: block;
 }
 
 .main-content .main-content--wrap .slide-controls--container {
   position: absolute;
-  bottom: -2.85rem;
-  left: 25rem;
+  bottom: 0rem;
+  left: 1em;
   z-index: 999;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -255,7 +268,7 @@ header nav .ul--wrap ul li .nav__link {
 .main-content .main-content--wrap .slide-controls--container .arrows--wrap {
   width: 80px;
   background: white;
-  margin: 0.25em;
+  margin: 0.25em 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -265,6 +278,47 @@ header nav .ul--wrap ul li .nav__link {
           justify-content: space-between;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.315);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.315);
+}
+
+@-webkit-keyframes slideIn {
+  from {
+    left: -300px;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    left: -300px;
+  }
+  to {
+    left: 0;
+  }
+}
+
+.active {
+  -webkit-animation: slideIn 0.5s;
+          animation: slideIn 0.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 html {
