@@ -1,10 +1,10 @@
 .main-content {
     @include flexCenter();
-    // align-items: flex-start;
+    align-items: flex-start;
     padding: 1em;
 
     .main-content--wrap {
-        // margin-top: 2em;
+        margin-top: 1em;
         width: 85%;
         max-width: 950px;
         min-width: 700px;
