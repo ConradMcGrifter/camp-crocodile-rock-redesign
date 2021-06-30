@@ -27,7 +27,7 @@ header nav {
       -ms-flex-align: center;
           align-items: center;
   width: 75%;
-  max-width: 1000px;
+  max-width: 950px;
 }
 
 @media only screen and (max-width: 850px) {
@@ -107,7 +107,7 @@ header nav .ul--wrap ul {
 
 header nav .ul--wrap ul li {
   text-align: center;
-  margin-left: 1em;
+  margin-left: 2em;
 }
 
 @media only screen and (max-width: 850px) {
@@ -141,26 +141,26 @@ header nav .ul--wrap ul li .nav__link {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  padding: 1em;
 }
 
 .main-content .main-content--wrap {
-  margin-top: 2em;
   width: 85%;
-  max-width: 1000px;
+  max-width: 950px;
   min-width: 700px;
   position: relative;
 }
 
 .main-content .main-content--wrap .title {
-  font-size: clamp(5rem, 6vw, 7rem);
+  font-size: clamp(5rem, 6vw, 8rem);
+  font-weight: 400;
   color: white;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.315);
 }
 
 .main-content .main-content--wrap .title span {
   color: #97ef88;
+  font-weight: 600;
 }
 
 .main-content .main-content--wrap .slide--grid {
@@ -172,8 +172,8 @@ header nav .ul--wrap ul li .nav__link {
   display: grid;
   -ms-grid-columns: 300px 1fr;
       grid-template-columns: 300px 1fr;
-  -ms-grid-rows: 575px;
-      grid-template-rows: 575px;
+  -ms-grid-rows: 550px;
+      grid-template-rows: 550px;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.315);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.315);
   overflow: hidden;
@@ -198,10 +198,13 @@ header nav .ul--wrap ul li .nav__link {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .main-content .main-content--wrap .slide--grid .info-box--wrap .info-box {
@@ -210,6 +213,14 @@ header nav .ul--wrap ul li .nav__link {
   display: none;
   -webkit-animation: slideIn 0.5s;
           animation: slideIn 0.5s;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main-content .main-content--wrap .slide--grid .info-box--wrap .info-box__h2 {
@@ -241,13 +252,11 @@ header nav .ul--wrap ul li .nav__link {
 }
 
 .main-content .main-content--wrap .slide--grid .slide-1-img {
-  display: block;
+  visibility: visible;
 }
 
 .main-content .main-content--wrap .slide-controls--container {
-  position: absolute;
-  bottom: 0rem;
-  left: 1em;
+  width: 100%;
   z-index: 999;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -265,18 +274,38 @@ header nav .ul--wrap ul li .nav__link {
 }
 
 .main-content .main-content--wrap .slide-controls--container .arrows--wrap {
-  width: 80px;
-  background: white;
-  margin: 0.25em 0;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0.25em 0.5em;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.315);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.315);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-content .main-content--wrap .slide-controls--container .arrows--wrap .circles {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main-content .main-content--wrap .slide-controls--container .arrows--wrap .circles .circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 999px;
+  background: #616161;
+  display: block;
+  cursor: pointer;
+}
+
+.main-content .main-content--wrap .slide-controls--container .arrows--wrap .circles .circle.active {
+  background: #97ef88;
 }
 
 @-webkit-keyframes slideIn {
@@ -337,7 +366,7 @@ header nav .ul--wrap ul li .nav__link {
   }
 }
 
-.active {
+.animate {
   -webkit-animation: fade 0.5s ease-in-out, zoom 1.25s ease-out;
           animation: fade 0.5s ease-in-out, zoom 1.25s ease-out;
 }

@@ -12,7 +12,7 @@ header {
         justify-content: space-between;
         align-items: center;
         width: 75%;
-        max-width: 1000px;
+        max-width: 950px;
 
         @include mobileSize {
             flex-wrap: wrap;
@@ -67,7 +67,7 @@ header {
 
                 li {
                     text-align: center;
-                    margin-left: 1em;
+                    margin-left: 2em;
 
                     @include mobileSize {
                         margin: 1em 0;
