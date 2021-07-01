@@ -27,6 +27,10 @@ body {
         ),
         url("../images/bg-desktop.svg");
     background-size: contain;
+
+    &.hidden {
+        overflow: hidden;
+    }
 }
 
 .slide-controls--container {

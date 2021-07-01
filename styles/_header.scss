@@ -14,12 +14,11 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 85%;
+        width: 90%;
         max-width: 950px;
 
         @include mobileSize {
             flex-wrap: wrap;
-            width: 100%;
         }
         .logo {
             width: 70px;
@@ -29,9 +28,25 @@ header {
             opacity: 100%;
 
             @include mobileSize {
-                visibility: hidden;
+                display: none;
                 width: 60px;
                 height: 60px;
+            }
+        }
+
+        .text-logo {
+            font-size: 2.4rem;
+            font-weight: 400;
+            color: white;
+            text-shadow: $boxShadow;
+            display: none;
+            span {
+                color: color(accent-light-green);
+                font-weight: 600;
+            }
+
+            @include mobileSize {
+                display: block;
             }
         }
 
@@ -43,26 +58,27 @@ header {
             // margin-right: 2em;
             @include mobileSize {
                 display: block;
-                margin-right: 1.5em;
+                // margin-right: 1.5em;
             }
 
             .hamburger-icon {
-                width: 35px;
+                width: 30px;
                 display: block;
             }
         }
 
         .ul--wrap {
+            display: flex;
             @include mobileSize {
                 height: 0;
                 width: 100%;
 
                 justify-content: center;
-                display: none;
+                visibility: hidden;
             }
 
             &.display {
-                display: flex;
+                visibility: visible;
             }
 
             ul {
@@ -75,6 +91,7 @@ header {
                     position: absolute;
                     width: 100%;
                     background: white;
+                    top: 6rem;
                 }
 
                 li {

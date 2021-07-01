@@ -1,1 +1,1 @@
-make the main page mobile friendly
+fix animations for info box - they arent sliding in after the first activation

@@ -31,7 +31,7 @@ header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 85%;
+  width: 90%;
   max-width: 950px;
 }
 
@@ -39,7 +39,6 @@ header nav {
   header nav {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 100%;
   }
 }
 
@@ -53,9 +52,28 @@ header nav .logo {
 
 @media only screen and (max-width: 850px) {
   header nav .logo {
-    visibility: hidden;
+    display: none;
     width: 60px;
     height: 60px;
+  }
+}
+
+header nav .text-logo {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: white;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.315);
+  display: none;
+}
+
+header nav .text-logo span {
+  color: #97ef88;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 850px) {
+  header nav .text-logo {
+    display: block;
   }
 }
 
@@ -69,13 +87,18 @@ header nav #hamburger-btn {
 @media only screen and (max-width: 850px) {
   header nav #hamburger-btn {
     display: block;
-    margin-right: 1.5em;
   }
 }
 
 header nav #hamburger-btn .hamburger-icon {
-  width: 35px;
+  width: 30px;
   display: block;
+}
+
+header nav .ul--wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media only screen and (max-width: 850px) {
@@ -85,14 +108,12 @@ header nav #hamburger-btn .hamburger-icon {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    display: none;
+    visibility: hidden;
   }
 }
 
 header nav .ul--wrap.display {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  visibility: visible;
 }
 
 header nav .ul--wrap ul {
@@ -114,6 +135,7 @@ header nav .ul--wrap ul {
     position: absolute;
     width: 100%;
     background: white;
+    top: 6rem;
   }
 }
 
@@ -572,6 +594,10 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 136, 212, 0.97)), to(rgba(30, 136, 212, 0.97))), url("../images/bg-desktop.svg");
   background: linear-gradient(rgba(30, 136, 212, 0.97), rgba(30, 136, 212, 0.97)), url("../images/bg-desktop.svg");
   background-size: contain;
+}
+
+body.hidden {
+  overflow: hidden;
 }
 
 .slide-controls--container {
