@@ -5,6 +5,7 @@
 
     @include mobileSize {
         padding: 0 0 1em 0;
+        align-items: center;
     }
 
     .main-content--wrap {
@@ -17,6 +18,7 @@
         @include mobileSize {
             min-width: 300px;
             width: 90%;
+            margin-top: 0;
         }
 
         .title {
@@ -27,6 +29,10 @@
             span {
                 color: color(accent-light-green);
                 font-weight: 600;
+            }
+
+            @include mobileSize {
+                display: none;
             }
         }
 
@@ -44,7 +50,8 @@
 
             @include mobileSize {
                 grid-template-columns: 1fr;
-                grid-template-rows: 250px 200px;
+                grid-template-rows: 300px 225px;
+                margin-top: 0;
             }
 
             .info-box--wrap {
@@ -77,6 +84,8 @@
 
                     @include mobileSize {
                         justify-content: space-around;
+                        align-items: center;
+                        text-align: center;
                     }
 
                     &__h2 {
@@ -87,6 +96,7 @@
                         @include mobileSize {
                             font-size: 2rem;
                             margin-bottom: 0.25em;
+                            max-width: 20ch;
                         }
                     }
 

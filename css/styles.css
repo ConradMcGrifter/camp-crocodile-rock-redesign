@@ -203,6 +203,9 @@ header nav .ul--wrap ul li .nav__link:hover::before {
 @media only screen and (max-width: 850px) {
   .main-content {
     padding: 0 0 1em 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -218,6 +221,7 @@ header nav .ul--wrap ul li .nav__link:hover::before {
   .main-content .main-content--wrap {
     min-width: 300px;
     width: 90%;
+    margin-top: 0;
   }
 }
 
@@ -231,6 +235,12 @@ header nav .ul--wrap ul li .nav__link:hover::before {
 .main-content .main-content--wrap .title span {
   color: #97ef88;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 850px) {
+  .main-content .main-content--wrap .title {
+    display: none;
+  }
 }
 
 .main-content .main-content--wrap .slide--grid {
@@ -253,8 +263,9 @@ header nav .ul--wrap ul li .nav__link:hover::before {
   .main-content .main-content--wrap .slide--grid {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 250px 200px;
-        grid-template-rows: 250px 200px;
+    -ms-grid-rows: 300px 225px;
+        grid-template-rows: 300px 225px;
+    margin-top: 0;
   }
 }
 
@@ -316,6 +327,10 @@ header nav .ul--wrap ul li .nav__link:hover::before {
   .main-content .main-content--wrap .slide--grid .info-box--wrap .info-box {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
   }
 }
 
@@ -329,6 +344,7 @@ header nav .ul--wrap ul li .nav__link:hover::before {
   .main-content .main-content--wrap .slide--grid .info-box--wrap .info-box__h2 {
     font-size: 2rem;
     margin-bottom: 0.25em;
+    max-width: 20ch;
   }
 }
 
