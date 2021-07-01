@@ -2,11 +2,12 @@
     @include flexCenter();
     align-items: flex-start;
     padding: 1em;
+    height: 100%;
 
     @include mobileSize {
-        padding: 1em 0 0 0;
+        padding: 1em 0;
         // align-items: center;
-        height: 91vh;
+        // height: 91vh;
     }
 
     .main-content--wrap {
