@@ -309,8 +309,6 @@ header nav .ul--wrap ul li .nav__link:hover::before {
   position: relative;
   color: white;
   display: none;
-  -webkit-animation: slideIn 0.5s, fade2 1s;
-          animation: slideIn 0.5s, fade2 1s;
   height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -330,6 +328,11 @@ header nav .ul--wrap ul li .nav__link:hover::before {
             align-items: center;
     text-align: center;
   }
+}
+
+.main-content .main-content--wrap .slide--grid .info-box--wrap .info-box.active {
+  -webkit-animation: slideIn 0.5s, fade2 1s;
+          animation: slideIn 0.5s, fade2 1s;
 }
 
 .main-content .main-content--wrap .slide--grid .info-box--wrap .info-box__h2 {

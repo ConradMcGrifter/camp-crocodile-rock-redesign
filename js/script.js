@@ -26,6 +26,7 @@ const showSlide = (n) => {
 
     for (let i = 0; i < infoBoxes.length; i++) {
         infoBoxes[i].style.display = "none";
+        infoBoxes[i].classList.remove("active");
     }
 
     for (let i = 0; i < circles.length; i++) {
@@ -35,6 +36,7 @@ const showSlide = (n) => {
     slides[slideIndex - 1].style.visibility = "visible";
     slides[slideIndex - 1].classList.add("animate");
     infoBoxes[slideIndex - 1].style.display = "flex";
+    infoBoxes[slideIndex - 1].classList.add("active");
     circles[slideIndex - 1].classList.add("active");
 };
 
