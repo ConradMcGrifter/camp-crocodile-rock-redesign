@@ -4,9 +4,9 @@
     padding: 1em;
 
     @include mobileSize {
-        padding: 1em 0;
+        padding: 1em 0 0 0;
         // align-items: center;
-        height: 90vh;
+        height: 91vh;
     }
 
     .main-content--wrap {
