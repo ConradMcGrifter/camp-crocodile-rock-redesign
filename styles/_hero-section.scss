@@ -4,8 +4,9 @@
     padding: 1em;
 
     @include mobileSize {
-        padding: 0 0 1em 0;
-        align-items: center;
+        padding: 1em 0;
+        // align-items: center;
+        height: 90vh;
     }
 
     .main-content--wrap {
@@ -50,7 +51,7 @@
 
             @include mobileSize {
                 grid-template-columns: 1fr;
-                grid-template-rows: 300px 225px;
+                grid-template-rows: 250px 200px;
                 margin-top: 0;
             }
 
@@ -170,7 +171,7 @@
                         width: 20px;
                         height: 20px;
                         border-radius: 999px;
-                        background: rgb(97, 97, 97);
+                        background: rgb(145, 145, 145);
                         display: block;
                         cursor: pointer;
                         transition: background 0.25s;
