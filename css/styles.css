@@ -402,6 +402,13 @@ header nav .ul--wrap ul li .nav__link:hover::before {
   visibility: hidden;
 }
 
+@media only screen and (max-width: 850px) {
+  .main-content .main-content--wrap .slide--grid .slide__img {
+    -o-object-position: right;
+       object-position: right;
+  }
+}
+
 .main-content .main-content--wrap .slide--grid .slide-1-img {
   visibility: visible;
 }

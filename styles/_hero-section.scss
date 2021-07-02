@@ -134,6 +134,10 @@
                 height: 100%;
                 object-fit: cover;
                 visibility: hidden;
+
+                @include mobileSize {
+                    object-position: right;
+                }
             }
 
             .slide-1-img {
