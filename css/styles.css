@@ -284,8 +284,8 @@ header nav .ul--wrap ul li .nav__link:hover::before {
   .main-content .main-content--wrap .slide--grid {
     -ms-grid-columns: 100vw;
         grid-template-columns: 100vw;
-    -ms-grid-rows: 55% 45%;
-        grid-template-rows: 55% 45%;
+    -ms-grid-rows: 2fr 1.5fr;
+        grid-template-rows: 2fr 1.5fr;
     margin-top: 0;
     height: 100%;
   }
