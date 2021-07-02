@@ -225,7 +225,7 @@ header nav .ul--wrap ul li .nav__link:hover::before {
 
 @media only screen and (max-width: 850px) {
   .main-content {
-    padding: 0;
+    padding: 1em 0;
   }
 }
 
@@ -240,8 +240,7 @@ header nav .ul--wrap ul li .nav__link:hover::before {
 @media only screen and (max-width: 850px) {
   .main-content .main-content--wrap {
     min-width: 300px;
-    width: 100%;
-    height: 100%;
+    width: 90%;
     margin-top: 0;
   }
 }
@@ -284,10 +283,9 @@ header nav .ul--wrap ul li .nav__link:hover::before {
   .main-content .main-content--wrap .slide--grid {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 2fr 1fr;
-        grid-template-rows: 2fr 1fr;
+    -ms-grid-rows: 250px 200px;
+        grid-template-rows: 250px 200px;
     margin-top: 0;
-    height: 100%;
   }
 }
 
