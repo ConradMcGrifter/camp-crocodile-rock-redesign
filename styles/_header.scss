@@ -9,6 +9,8 @@ header {
 
     @include mobileSize {
         padding: 0;
+        position: fixed;
+        height: 60px;
     }
     nav {
         display: flex;
