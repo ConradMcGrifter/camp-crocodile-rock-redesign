@@ -292,8 +292,8 @@ header nav .ul--wrap ul li .nav__link:hover::before {
     border-radius: 0px;
     -ms-grid-columns: 100vw;
         grid-template-columns: 100vw;
-    -ms-grid-rows: 300px 1fr;
-        grid-template-rows: 300px 1fr;
+    -ms-grid-rows: 250px 1fr;
+        grid-template-rows: 250px 1fr;
     margin-top: 0;
   }
 }
