@@ -8,7 +8,6 @@
         padding: 0;
         // align-items: center;
         // height: 91vh;
-        position: relative;
     }
 
     .main-content--wrap {
@@ -53,7 +52,7 @@
             overflow: hidden;
 
             @include mobileSize {
-                grid-template-columns: 1fr;
+                grid-template-columns: 100vw;
                 grid-template-rows: 2fr 1.5fr;
                 margin-top: 0;
                 height: 100%;

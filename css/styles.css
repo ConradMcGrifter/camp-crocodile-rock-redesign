@@ -226,7 +226,6 @@ header nav .ul--wrap ul li .nav__link:hover::before {
 @media only screen and (max-width: 850px) {
   .main-content {
     padding: 0;
-    position: relative;
   }
 }
 
@@ -283,8 +282,8 @@ header nav .ul--wrap ul li .nav__link:hover::before {
 
 @media only screen and (max-width: 850px) {
   .main-content .main-content--wrap .slide--grid {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -ms-grid-columns: 100vw;
+        grid-template-columns: 100vw;
     -ms-grid-rows: 2fr 1.5fr;
         grid-template-rows: 2fr 1.5fr;
     margin-top: 0;
