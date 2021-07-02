@@ -53,7 +53,7 @@
 
             @include mobileSize {
                 grid-template-columns: 100vw;
-                grid-template-rows: 50% 50%;
+                grid-template-rows: minmax(200px, 1fr) 1fr;
                 margin-top: 0;
                 max-height: 100%;
                 // position: fixed;
