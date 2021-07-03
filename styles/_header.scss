@@ -84,7 +84,7 @@ header {
                 visibility: visible;
             }
 
-            ul {
+            .nav__ul {
                 display: flex;
                 list-style-type: none;
 
@@ -95,6 +95,13 @@ header {
                     width: 100%;
                     background: white;
                     top: 6rem;
+                    max-height: 0px;
+                    overflow: hidden;
+                    transition: all 0.25s ease-in-out;
+                }
+
+                &.display {
+                    max-height: 250px;
                 }
 
                 li {
@@ -148,7 +155,7 @@ header {
     z-index: 999;
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.25s;
+    transition: 0.25s;
     &.active {
         visibility: visible;
         opacity: 1;
