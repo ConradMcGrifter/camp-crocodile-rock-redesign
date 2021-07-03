@@ -105,6 +105,10 @@
 
                     &.active {
                         animation: slideIn 0.5s, fade2 1s;
+
+                        @include mobileSize {
+                            animation: none;
+                        }
                     }
 
                     &__h2 {
@@ -172,6 +176,7 @@
                 #next {
                     display: flex;
                     transition: background 0.25s;
+
                     @include mobileSize {
                         padding: 0.5em;
                     }
@@ -198,7 +203,8 @@
                         display: block;
                         cursor: pointer;
                         transition: background 0.25s;
-                        outline: solid rgba(63, 63, 63, 0.288) 2px;
+                        border: solid rgba(63, 63, 63, 0.288) 2px;
+                        box-shadow: $boxShadow;
 
                         &:hover {
                             background: rgb(71, 71, 71);

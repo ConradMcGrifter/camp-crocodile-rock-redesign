@@ -371,6 +371,13 @@ header nav .ul--wrap ul li .nav__link:hover::before {
           animation: slideIn 0.5s, fade2 1s;
 }
 
+@media only screen and (max-width: 850px) {
+  .main-content .main-content--wrap .slide--grid .info-box--wrap .info-box.active {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
+
 .main-content .main-content--wrap .slide--grid .info-box--wrap .info-box__h2 {
   font-size: clamp(2.2rem, 5vw, 2.6rem);
   font-weight: 400;
@@ -501,7 +508,9 @@ header nav .ul--wrap ul li .nav__link:hover::before {
   cursor: pointer;
   -webkit-transition: background 0.25s;
   transition: background 0.25s;
-  outline: solid rgba(63, 63, 63, 0.288) 2px;
+  border: solid rgba(63, 63, 63, 0.288) 2px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.315);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.315);
 }
 
 .main-content .main-content--wrap .slide-controls--container .arrows--wrap .circles .circle:hover {
@@ -614,8 +623,8 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 2.4rem;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 136, 212, 0.97)), to(rgba(30, 136, 212, 0.97))), url("../images/bg-desktop.svg");
-  background: linear-gradient(rgba(30, 136, 212, 0.97), rgba(30, 136, 212, 0.97)), url("../images/bg-desktop.svg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 136, 212, 0.94)), to(rgba(30, 136, 212, 0.94))), url("../images/bg-desktop.svg");
+  background: linear-gradient(rgba(30, 136, 212, 0.94), rgba(30, 136, 212, 0.94)), url("../images/bg-desktop.svg");
   background-size: contain;
 }
 
