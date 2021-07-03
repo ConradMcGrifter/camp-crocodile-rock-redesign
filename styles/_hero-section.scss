@@ -87,6 +87,7 @@
                 }
 
                 .info-box {
+                    max-width: 34rem;
                     position: relative;
                     color: white;
                     display: none;
@@ -99,6 +100,7 @@
                         justify-content: space-around;
                         align-items: center;
                         text-align: center;
+                        // height: 85%;
                     }
 
                     &.active {
@@ -106,27 +108,27 @@
                     }
 
                     &__h2 {
-                        font-size: 2.6rem;
+                        font-size: clamp(2.2rem, 5vw, 2.6rem);
                         font-weight: 400;
                         margin-bottom: 2em;
 
                         @include mobileSize {
-                            font-size: 2rem;
+                            // font-size: 2rem;
                             margin-bottom: 0.25em;
                             max-width: 20ch;
                         }
                     }
 
                     &__p {
-                        font-size: 1.8rem;
+                        font-size: clamp(1.4rem, 4vw, 1.8rem);
                         @include mobileSize {
-                            font-size: 1.4rem;
+                            // font-size: 1.4rem;
                         }
                     }
                 }
 
                 .slide-1-info {
-                    display: block;
+                    display: flex;
                 }
             }
 
@@ -163,15 +165,16 @@
                 @include mobileSize {
                     position: absolute;
                     z-index: 1;
-                    top: -4rem;
+                    top: -5.2rem;
                 }
 
                 #prev,
                 #next {
-                    // padding: 0.25em 0.5em;
                     display: flex;
                     transition: background 0.25s;
-                    padding: 0.1em;
+                    @include mobileSize {
+                        padding: 0.5em;
+                    }
 
                     &:hover {
                         background: rgba(255, 255, 255, 0.096);
@@ -183,7 +186,7 @@
                 }
 
                 .circles {
-                    width: 50%;
+                    width: 150px;
                     display: flex;
                     justify-content: space-around;
 
@@ -191,13 +194,14 @@
                         width: 20px;
                         height: 20px;
                         border-radius: 999px;
-                        background: rgb(145, 145, 145);
+                        background: rgb(207, 207, 207);
                         display: block;
                         cursor: pointer;
                         transition: background 0.25s;
+                        outline: solid rgba(63, 63, 63, 0.288) 2px;
 
                         &:hover {
-                            background: rgb(177, 177, 177);
+                            background: rgb(71, 71, 71);
                         }
                     }
 
